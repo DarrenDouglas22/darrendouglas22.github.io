@@ -1,25 +1,53 @@
 #top-bar {
 	background-color: white;
+	margin: 0 20px;
+}
+
+#top-bar h3{
+	color: #1777CB;
 }
 #nav-banner {
 	background-color: #1777CB;
 	color: white;
+	height: 50px;
 }
 
+#nav-banner ul {
+	margin: 0px 10px;
+}
+#nav-banner ul li {
+	padding: 15px 10px 0 10px;
+}
+
+#meet-box {
+	width: 35%; 
+	height: auto; 
+	display: block; 
+	margin: auto; 
+	background-color: white;
+}
 #social-links {
 	
 }
 
 #top-banner {
+	background-image: url("banner.jpg");
+	height: 100vh;
+	text-align: center;
+	color: #1777CB;
+}
 
+#top-banner h4 {
+	color: black;
 }
 
 #about {
-
+	background-color: #F5F6F8;
+	text-align: center;
 }
 
 #content {
-
+	background-color: #ffffff
 }
 
 #contact {

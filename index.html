@@ -6,6 +6,34 @@
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
+<!-- Smooth Scroll -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 1000, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
 
 <!-- Optional theme -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
@@ -18,34 +46,38 @@
 	<div class="container-fluid" id="top-bar">
 
 		<h3> DARREN DOUGLAS </h3>
-		<h4> THE TECHNOLOGY CAPTAIN </h4>
+		<h5> The Technology Captain </h5>
 
 	</div>
 <!-- END TOP BAR -->
 
 <!-- START NAVIGATION BAR -->
 	<div class="container-fluid" id="nav-banner">
-		<ul>
-			<li>HOME</li>
-			<li>TECH</li>
-			<li>PROJECTS</li>
-			<li>BOOKSHELF</li>
+		<ul class="nav nav-pills navbar-left">
+			<li>Home</li>
+			<li>Tech</li>
+			<li>Projects</li>
+			<li>Bookshelf</li>
 		</ul>
 
-		<div class="container" id="social-links">
-			<a>Facebook</a>
-			<a>Twitter</a>
-			<a>Instagram</a>
-			<a>Linkedin</a>
-		</div>
+		<ul class="nav nav-pills navbar-right" id="social-links">
+			<li>Facebook</li>
+			<li>Twitter</li>
+			<li>Instagram</li>
+			<li>Linkedin</li>
+			<li>Github</li>
+		</ul>
 
 	</div>
 <!-- END NAVIGATION BAR -->
 
 <!-- START TOP BANNER -->
-<div class="container-fluid" id="top-banner">
-
-<!--background image with box: meet darren douglas; developer. visionary. influencer -->
+<div class="jumbotron" id="top-banner">
+	<div class="container" id="meet-box">
+		<h4> Developer. Visionary. Infleuncer </h4>
+		<h1> Meet <br> Darren <br> Douglas </h1>
+		<p><a href="#about"> <img src="scroll-down.png" style="width: 7%; margin: 50px;"></a></p>
+	</div>
 
 </div>
 <!-- END TOP BANNER -->
@@ -53,7 +85,8 @@
 <!-- START ABOUT -->
 <div class="container-fluid" id="about">
 
-<!--ABOUT THE TECHNOLOGY CAPTAIN; Millennials are shaking up the workforce and many industries. As a tech strategist, Darren is focused on creating unique user experiences to drive innovation and growth for his community. He is a former basketball star who has proved to be a leader on and off the court, as well as an emerging thought partner in technology. -->
+<h3> ABOUT <br> The Technology Captain </h3>
+<p>As a tech strategist, Darren is focused on creating unique user experiences to drive innovation and growth for his community. He is a former basketball star who has proved to be a leader on and off the court, as well as an emerging thought partner in technology.</p>
 
 </div>
 <!-- END ABOUT -->
