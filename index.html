@@ -53,7 +53,7 @@ $(document).ready(function(){
 
 <!-- START NAVIGATION BAR -->
 	<div class="container-fluid" id="nav-banner">
-		<ul class="nav nav-pills navbar-left">
+		<ul class="nav nav-pills navbar-left" id="nav-tabs">
 			<li>Home</li>
 			<li>Tech</li>
 			<li>Projects</li>
@@ -61,11 +61,11 @@ $(document).ready(function(){
 		</ul>
 
 		<ul class="nav nav-pills navbar-right" id="social-links">
-			<li>Facebook</li>
-			<li>Twitter</li>
-			<li>Instagram</li>
-			<li>Linkedin</li>
-			<li>Github</li>
+			<li><img src="facebook.png"></li>
+			<li><img src="twitter.png"></li>
+			<li><img src="instagram.png"></li>
+			<li><img src="linkedin.png"></li>
+			<li><img src="github.png"></li>
 		</ul>
 
 	</div>
@@ -74,9 +74,9 @@ $(document).ready(function(){
 <!-- START TOP BANNER -->
 <div class="jumbotron" id="top-banner">
 	<div class="container" id="meet-box">
-		<h4> Developer. Visionary. Infleuncer </h4>
+		<h3 style="margin-top: 50px; color: black;"> Developer. Visionary. Influencer </h3>
 		<h1> Meet <br> Darren <br> Douglas </h1>
-		<p><a href="#about"> <img src="scroll-down.png" style="width: 7%; margin: 50px;"></a></p>
+		<p><a href="#about"> <img src="scroll-down.png" style="width: 20%; margin: 40px;"></a></p>
 	</div>
 
 </div>
@@ -84,22 +84,73 @@ $(document).ready(function(){
 
 <!-- START ABOUT -->
 <div class="container-fluid" id="about">
-
-<h3> ABOUT <br> The Technology Captain </h3>
-<p>As a tech strategist, Darren is focused on creating unique user experiences to drive innovation and growth for his community. He is a former basketball star who has proved to be a leader on and off the court, as well as an emerging thought partner in technology.</p>
-
+	<div class="container" id="about-text">
+		<h3> ABOUT <br> The Technology Captain </h3>
+		<p>As a tech strategist, Darren is focused on creating unique user experiences to drive innovation and growth for his community. He is a former basketball star who has proved to be a leader on and off the court, as well as an emerging thought partner in technology.</p>
+	</div>
 </div>
 <!-- END ABOUT -->
 <!-- START NEWS/SOCIAL/API CONTENT -->
 <div class="container-fluid" id="content">
-
+	<div class="row">
+	  <div class="col-sm-6 col-md-4">
+	    <div class="thumbnail">
+	      <img src="story.png" alt="...">
+	      <div class="caption">
+	        <h3>Something cool</h3>
+	        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+	      </div>
+	    </div>
+	  </div>
+	  <div class="col-sm-6 col-md-4">
+	    <div class="thumbnail">
+	      <img src="story.png" alt="...">
+	      <div class="caption">
+	        <h3>Something cool</h3>
+	        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+	      </div>
+	    </div>
+	  </div>
+	  <div class="col-sm-6 col-md-4">
+	    <div class="thumbnail">
+	      <img src="story.png" alt="...">
+	      <div class="caption">
+	        <h3>Something cool</h3>
+	        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+	      </div>
+	    </div>
+	  </div>
+	</div>
 
 </div>
-<!-- END TOP BANNER -->
+<!-- END NEWS/SOCIAL/API CONTENT -->
+
+<div class="container-fluid" id="quote-block">
+	<div class="media">
+	  <div class="media-left media-middle">
+	      <img class="media-object" src="leader.jpg" style="width: 400px;" alt="servant leader quote">
+	  </div>
+	  <div class="media-body">
+	    <h4 class="media-heading" style="text-align:center;"> "You don't become a leader by fighting your way to the top. Rather, you become a leader by helping others to the top" <br> William Cohen </h4>
+	  </div>
+	</div>
+	</div>
+
 <!-- START CONTACT -->
 <div class="container-fluid" id="contact">
-
-
+	<h4>Stay Connected</h4>
+	<p>Connect with me on social media for all the latest updates and more</p>
+	<ul class="list-inline text-center">
+		<li><img src="facebook.png"></li>
+		<li><img src="twitter.png"></li>
+		<li><img src="instagram.png"></li>
+		<li><img src="linkedin.png"></li>
+		<li><img src="github.png"></li>
+	</ul>
+	<p>©2017 by Darren Douglas</p>
 </div>
 <!-- END CONTACT -->
 </body>

@@ -1,6 +1,9 @@
+.html, .body {
+	font-family: 'Times';
+}
 #top-bar {
 	background-color: white;
-	margin: 0 20px;
+	margin: 10px 20px;
 }
 
 #top-bar h3{
@@ -15,26 +18,36 @@
 #nav-banner ul {
 	margin: 0px 10px;
 }
-#nav-banner ul li {
+
+#nav-tabs li {
 	padding: 15px 10px 0 10px;
+}
+
+#social-links li img{
+	width: 25px;
+	margin: 10px;
 }
 
 #meet-box {
 	width: 35%; 
-	height: auto; 
+	height: 100%; 
 	display: block; 
 	margin: auto; 
 	background-color: white;
 }
-#social-links {
-	
+
+#meet-box h1, h3{
+	margin-top: 40px;
 }
+
+
 
 #top-banner {
 	background-image: url("banner.jpg");
-	height: 100vh;
+	height: 80vh;
 	text-align: center;
 	color: #1777CB;
+	margin-bottom: 0px !important;
 }
 
 #top-banner h4 {
@@ -46,10 +59,27 @@
 	text-align: center;
 }
 
+#about-text {
+	width: 80vh;
+}
+
 #content {
-	background-color: #ffffff
+	background-color: #ffffff;
+	display: inline-block;
+}
+
+#quote-block {
+	background-color: #F5F6F8;;
 }
 
 #contact {
+	background-color: #F5F6F8;
+	text-align: center;
 
+}
+
+#contact img {
+	width: 25px;
+	margin: 10px;
+	display: inline-block;
 }
