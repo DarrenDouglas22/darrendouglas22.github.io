@@ -74,18 +74,18 @@ $(document).ready(function(){
 <!-- START TOP BANNER -->
 <div class="jumbotron" id="top-banner">
 	<!--<div class="container" id="meet-box">-->
-		<h1 style="margin-top: 50px; color: #1777CB;"> Developer. Visionary. Influencer </h1>
+		<h1 style="margin-top: 50px; color: white;"> Developer. Visionary. Influencer </h1>
 		<!--<h1> Meet <br> Darren <br> Douglas </h1>-->
-		<p><a href="#about"> <img src="scroll-down.png" style="width: 10%; margin: 40px;"></a></p>
+		<p><a href="#about" style="background-image: url('scroll-down.png');"> <img src="scroll-down.png" style="width: 10%; margin: 100px;"></a></p>
 	<!--</div>-->
 
 </div>
 <!-- END TOP BANNER -->
 
 <!-- START ABOUT -->
-<div class="container-fluid" id="about">
-	<div class="container" id="about-text">
-		<h3> ABOUT <br> The Technology Captain </h3>
+<div class="container-fluid" id="about" style="text-align: center;">
+	<div class="container" id="about-text" >
+		<h3> The Technology Captain </h3>
 		<p>As a tech strategist, Darren is focused on creating unique user experiences to drive innovation and growth for his community. He is a former basketball star who has proved to be a leader on and off the court, as well as an emerging thought partner in technology.</p>
 	</div>
 </div>
@@ -129,11 +129,11 @@ $(document).ready(function(){
 <!-- END NEWS/SOCIAL/API CONTENT -->
 
 <div class="container-fluid" id="quote-block">
-	<div class="media">
-	  <div class="media-left media-middle">
-	      <img class="media-object" src="leader.jpg" style="width: 400px;" alt="servant leader quote">
+	<div class="row">
+	  <div class="col-md-6">
+	      <img class="media-object" src="leader.jpg" style="width: 100%;" alt="servant leader quote">
 	  </div>
-	  <div class="media-body">
+	  <div class="col-md-6">
 	    <h4 class="media-heading" style="text-align:center;"> "You don't become a leader by fighting your way to the top. Rather, you become a leader by helping others to the top" <br> William Cohen </h4>
 	  </div>
 	</div>
@@ -142,62 +142,13 @@ $(document).ready(function(){
 <!--<div class="container-fluid" id="Projects">
 </div>-->
 <!-- START GOODREADS WIDGET -->
-<div class="container-fluid" id="Bookshelf">
-      <!-- Show static HTML/CSS as a placeholder in case js is not enabled - javascript include will override this if things work -->
-      <style type="text/css" media="screen">
-  .gr_custom_container_1484957525 {
-    /* customize your Goodreads widget container here*/
-    border: 1px solid gray;
-    border-radius:10px;
-    padding: 10px 5px 10px 5px;
-    background-color: #FFFFFF;
-    color: #000000;
-    width: 300px
-  }
-  .gr_custom_header_1484957525 {
-    /* customize your Goodreads header here*/
-    border-bottom: 1px solid gray;
-    width: 100%;
-    margin-bottom: 5px;
-    text-align: center;
-    font-size: 120%
-  }
-  .gr_custom_each_container_1484957525 {
-    /* customize each individual book container here */
-    width: 100%;
-    clear: both;
-    margin-bottom: 10px;
-    overflow: auto;
-    padding-bottom: 4px;
-    border-bottom: 1px solid #aaa;
-  }
-  .gr_custom_book_container_1484957525 {
-    /* customize your book covers here */
-    overflow: hidden;
-    height: 60px;
-      float: left;
-      margin-right: 4px;
-      width: 39px;
-  }
-  .gr_custom_author_1484957525 {
-    /* customize your author names here */
-    font-size: 10px;
-  }
-  .gr_custom_tags_1484957525 {
-    /* customize your tags here */
-    font-size: 10px;
-    color: gray;
-  }
-  .gr_custom_rating_1484957525 {
-    /* customize your rating stars here */
-    float: right;
-  }
-</style>
+<div class="container-fluid" id="Bookshelf" >
 
-      <div id="gr_custom_widget_1484957525">
+
+      <div id="gr_custom_widget_1484957525" >
           <div class="gr_custom_container_1484957525">
     <h2 class="gr_custom_header_1484957525">
-    <a style="text-decoration: none;" href="https://www.goodreads.com/review/list/62672006-darren-douglas?shelf=read&amp;utm_medium=api&amp;utm_source=custom_widget">Darren&#39;s Bookshelf:</a>
+    <a style="text-decoration: none;" href="https://www.goodreads.com/review/list/62672006-darren-douglas?shelf=read&amp;utm_medium=api&amp;utm_source=custom_widget">Darren&#39;s Bookshelf: read</a>
     </h2>
       <div class="gr_custom_each_container_1484957525">
           <div class="gr_custom_book_container_1484957525">
