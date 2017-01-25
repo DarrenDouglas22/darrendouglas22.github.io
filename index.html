@@ -232,5 +232,19 @@ $(document).ready(function(){
 	<p>©2017 by Darren Douglas</p>
 </div>
 <!-- END CONTACT -->
+<script>
+function httpGetAsync(theUrl, callback)
+{
+    var xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function() { 
+        if (xhr.readyState == 4 && xhr.status == 200)
+            callback(xhr.responseText);
+
+    }
+    xhr.open("GET", "https://newsapi.org/v1/articles?source=business-insider&sortBy=top&apiKey=6ab55120319548239a7e294071f0fcba", true); // true for asynchronous 
+    xhr.send(null);
+
+}
+</script>
 </body>
 </html>
