@@ -25,7 +25,7 @@
 <a href="https://github.com/DarrenDouglas22">github</a>
 <a href="https://www.goodreads.com/review/list/62672006?shelf=">bookshelf</a>
 <a href="mailto:darrenadouglas@gmail.com">email</a>
-<img src="avatar.png">
+<img src="avatar.png" style="height: 75px; width: auto;">
 </div>
 </body>
 </html>
@@ -34,17 +34,17 @@
 body {
   font-family: "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
   background-color: #f5f5f5;
+  max-height: 100%;
   
 }
-#wrapper {
-  height: 100vh;
-  text-align: center;
+#myWrapper {
+  max-height: 20vh;
 }
 
-#wrapper img{
+#myWrapper img{
   position: absolute;
-  bottom: 0px;
-  right: 0px;
+  right: 20px;
+  bottom: 20px;
 }
 h1 {
   font-size: 65px;
@@ -57,4 +57,25 @@ a {
   font-size: 40px;
   text-decoration: none !important;
 }
+
+@media screen and (max-width: 760px) {
+    h1 {
+        font-size: 50px;
+    }
+
+    a {
+        font-size: 31px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    a {
+        font-size: 25px;
+    }
+}
+
 </style>
