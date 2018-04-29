@@ -151,49 +151,48 @@ setTimeout(ldinsp, 500); document.readyState != "complete" ? (window.attachEvent
       <h2 style="text-align: center; font-weight: 300; font-size: 28px;">Some freelance work I've done</h2>
       <hr />
 
-      <div class="row">
-        <div class="col-md-4" >
-          <a id="projects">
-          <img class="center-block" src="pulchram.png" alt="Pulchram Press Suzette Francis" />
-            <span id="project-desc">
-              <!--<h3>Pulchram Press Website Launch</h3>-->
-              <ul>
-                <h3>Website Information Architecture</h3>
-                <h3>Website Design</h3>
-                <h3>Digital Strategy</h3>
-              </ul>
-            </span>
-          </a>
-        </div>
-
-        <div class="col-md-4" >
-          <a id="projects">
-          <img class="center-block" src="abwhe.png" alt="Association of Black Women in Higher Eduaction - Valerie Ann Dorsey" />
-            <span id="project-desc">
-              <!--<h3>Association of Black Women in Higher Education Web Consultant</h3>-->
-              <ul>
-                <h3>Website Optimization</h3>
-                <h3>Wordpress Maintenance & Customization</h3>
-                <h3>Digital Strategy</h3>
-              </ul>
-            </span>
-            </a>
-        </div>
-
-        <div class="col-md-4">
-        <a id="projects">
-          <img class="center-block" src="hesi.jpg" alt="Hesi Collectiv Kyle Douglas" />
-          <span id="project-desc">
-              <!--<h3>HESI Collectiv Digital Consultant</h3>-->
-              <ul>
-                <h3>Analytics</h3>
-                <h3>Squarespace Customization</h3>
-                <h3>Digital Strategy</h3>
-              </ul>
-            </span>
-            </a>
-        </div>
+      <!-- START PRESS SLIDER -->
+      <div id="press-slider" style="display: none;">
+      <div class="container-fluid" style="background-color: #5C507C; padding: 25px 0;">
+    <div class="row">
+      <div class="col-md-12 heroSlider-fixed">
+        <div class="overlay">
       </div>
+         <!-- Slider -->
+        <div class="slider responsive">
+          <div>
+            <img style="width: 150px; height: auto; padding: 5px; margin: auto;" src="/assets/CBS.png" alt="" />
+          </div>
+          <div>
+            <img style="width: 150px; height: auto; padding: 5px; margin: auto;" src="/assets/NYT.png" alt="" />
+          </div>
+          <div>
+            <img style="width: 150px; height: auto; padding: 5px; margin: auto;" src="/assets/Channel2.png" alt="" />
+          </div>
+          <div>
+            <img style="width: 150px; height: auto; padding: 5px; margin: auto;" src="/assets/WH.png" alt="" />
+          </div>
+          <div>
+            <img style="width: 150px; height: auto; padding: 5px; margin: auto;" src="/assets/GMA.png" alt="" />
+          </div>
+          <div>
+            <img style="width: 150px; height: auto; padding: 5px; margin: auto;" src="/assets/GDNY.png" alt="" />
+          </div>
+        </div>
+         <!-- control arrows -->
+        <!--<div class="prev">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        </div>
+        <div class="next">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        </div>-->
+        
+      </div>
+    </div>
+  </div>
+      </div>
+
+      <!-- END PRESS SLIDER -->
 
     </div>
   </section>
@@ -228,5 +227,52 @@ $(function() {
     }, 750);
   });
 });
+</script>
+
+
+<script>
+$(document).ready(function () {
+
+$('.responsive').slick({
+  dots: true,
+  arrows: false,
+  /*prevArrow: $('.prev'),
+  nextArrow: $('.next'),*/
+  infinite: false,
+  speed: 300,
+  slidesToShow: 4,
+  slidesToScroll: 4,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
+
+});
+
 </script>
 </html>
