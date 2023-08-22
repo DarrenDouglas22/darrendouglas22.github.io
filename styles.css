@@ -54,7 +54,6 @@ header {
 
 .avatar {
     display: flex;
-    margin-left: 25px;
     margin-right: auto;
     align-items: center;
 }
@@ -366,9 +365,6 @@ form button {
         padding: 30px;
     }
 
-    .avatar {
-        margin-left: 5px;
-    }
 
     h2 {
         font-size: 24px;
