@@ -158,14 +158,24 @@ hidden: ["author","reactions", "subtitle"]
 <div class="quote" style="text-align: center;">
 <h3 style="font-style:italic;padding: 20px 0px">Every great story begins with a vision</h3>
 </div>
-        <script>
-        //hamburger menu animation
+        
+    <script>
+    // Hamburger menu animation and collapse on menu item click
     const navToggle = document.querySelector(".nav-toggle");
     const navList = document.querySelector(".nav-list");
 
     navToggle.addEventListener("click", () => {
         navList.classList.toggle("active");
         navToggle.classList.toggle("active");
+    });
+
+    // Collapse menu on menu item click
+    const navItems = document.querySelectorAll(".nav-item a");
+    navItems.forEach(item => {
+        item.addEventListener("click", () => {
+            navList.classList.remove("active");
+            navToggle.classList.remove("active");
+        });
     });
 </script>
 
